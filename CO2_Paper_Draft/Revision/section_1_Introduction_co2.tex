@@ -1,0 +1,63 @@
+\section{Introduction}
+%\label{intro}
+%\paragraph{Hydraulic fracturing.}
+%Hydraulic fracturing is a process where fracture propagation is driven by tensile loading by injected high-pressure fluid.   It is widely applied in enhancing oil and gas production from underground reservoirs. Other important applications of this technique include extracting geothermal energy and determining \emph{in situ} stress.
+
+%Modeling of hydraulic fracturing has attracted growing attention from researchers and engineers since 1950s. The pioneering papers by Khristianovic and Zheltov \cite{khristianovic1955} and by Geertsma and de Klerk (KGD) \cite{Geertsma69} marked the beginning of hydraulic fracturing modeling. Despite extensive  research on this subject, the numerical modeling of fluid-driven fractures remains a challenging problem. It includes at least three distinct ingredients: solid deformation, fluid flow in fracture, and fracture propagation. The solid deformation is usually simulated using linear elasticity theory, and fracture propagation is normally modeled with Griffith's theory. Review of the overall simulation technique can be found in \cite{Garagash06,Adachi2007739}. 
+
+%\paragraph{Shale gas.}
+
+%\todo[inline]{YS: Please collect all cited works except books in a separate folder.}
+
+
+%\todo[inline]{YS (for myself): Read through the intro.}
+Shale gas is the natural gas trapped within the shale, or mudstone reservoir\deleted{, the most common sedimentary rock}.  %\deleted{Shale gas has become increasingly interested energy source in all of the world. In 2010, 20\% of U.S. natural gas production was provided by shale gas. While by prediction of the U.S. government's Energy Information Administration, 46\% of the United States' natural gas supply will come from shale gas  by 2035 \cite{manthei2003stress}. China is estimated to have  the largest recoverable shale gas reservoirs \cite{united2011world}.} 
+Shale is a fine-grained, sedimentary rock composed of clay minerals and silt-sized particles. %\deleted{, and consisting of  other minerals such as quartz, calcite, and pyrite.}
+The shale has low permeability so that it significantly inhibits the gas flow from the reservoir rocks to the production wells. As a result, the economic feasibility of shale gas development relies on the effective stimulation of the reservoirs \cite{hattori2017numerical}.
+Shale gas has become an energy source of increasing worldwide interest due to the two technologies that have become mature in industry: horizontal drilling and hydraulic fracturing technique \cite{middleton2014co2}.
+
+%\paragraph{CO$_2$ fracturing.}
+To date, water-based fluids are the most important fluids  regularly used in the commercial shale gas due to their ready availability and low cost. But there are also some disadvantages to use water-based fluids, namely water shortage, contamination of underground water, and low fracturing performance. Also, hydraulic fracturing cannot avoid the clay swelling problem in shale \cite{middleton2014co2}. Due to these problems, researchers {actively investigate} non-aqueous (see \cite{WANG2016160}) and non-fluid fracturing techniques such as explosive based method \cite{miller1976fracturing}.
+
+Carbon dioxide (CO$_2$) is one of the non-aqueous fracturing fluids that is considered to {be used for} fracturing. CO$_2$ as a fracturing fluid has been successfully applied to fracturing unconventional gas reservoirs decades ago \cite{lillies1982sand}. Since the critical temperature of CO$_2$ is 31.1$^{\circ}$C, once the pressure exceeds its critical pressure of 7.38 MPa, it will change to the supercritical state \cite{suehiro1996critical}. It can be injected down-hole either in liquid or supercritical state. The main benefits of CO$_2$ as a fracturing fluid include reducing consumption of water and water contamination, %Also, carbon dioxide is highly miscible with oil and gas.  In particular, the loss of CO$_2$ to the atmosphere should be avoided because of eventual impact on global warming. 
+%CO$_2$ fracturing 
+keeping clays (smectite and illite) stabilized, and preventing metal leaching and chemical interactions.
+
+Brown \cite{brown2000hot} proposed CO$_2$ as a fracturing fluid and circulating fluid in geothermal energy extraction. Middletton  \emph{et al.}~\cite{middleton2015shale} investigated
+the potential of using CO$_2$ as a fracturing fluid for commercial scale of shale production. % is investigate by Middletton \emph{et al.}~\cite{middleton2015shale}. 
+In the laboratory scale, Ishida \emph{et al.}~\cite{ishida2012acoustic,ishida2016features} conducted fracturing %laboratory 
+experiments by using supercritical CO$_2$. Also, some researchers investigated the effect of different fracturing fluids \cite{wang2018influence,zhou2014fluid}.
+
+%\paragraph{Numerical modeling of fracture.}
+There exist two general approaches for modeling fracture. One is discrete models for fracture where the geometrical discontinuity is modeled by modifying the geometry of intact structure \cite{ngo1967finite,moes1999finite,RaChHuShLe14,verhoosel2011isogeometric}. %They are the most appealing model to fracture, and have been pursued since the late 1960s. Some discrete models such as extended finite element method \cite{moes1999finite}, and universal meshes \cite{RaChHuShLe14}  decouple the fracture path from the underlying discretisation.
+The other is smeared crack models where the discontinuity is distributed over a finite width, such as the phase field \cite{Bourdin2000797} and the gradient-enhanced damage methods \cite{Peerlings19963391}.
+In this approach, an additional unknown and a length scale are introduced. %\deleted{Even though, phase field and gradient damage have similar formulation, but phase field  is formulated starting from the description of a crack in fracture mechanics while gradient damage starts from a continuum mechanics point of view.}
+
+%\paragraph{Phase field.}
+Phase field modeling of fracture has gained popularity since the beginning of this century. The phase field model by Bourdin  \emph{et al.}~\cite{Bourdin2000797} is essentially a regularization of the variational formulation of brittle fracture by Francfort and Marigo \cite{Francfort19981319}. What makes the phase field an attractive approach can be attributed to its convenience in simulating complex fracture processes, including crack initiation, propagation, branching and merging. Compared to discrete fracture descriptions, the phase field approaches avoid tracking the complicated crack geometry; instead, the crack evolution is a natural outcome of the numerical solution to a {constrained optimization problem}. Thus, it significantly decreases the implementation difficulty, especially when dealing with 3D problems. 
+
+%\todo[inline]{YS: More details should be given for the references cited in this paragraph.\\
+%Mostafa: Given}
+%\paragraph{Fracturing by phase field.}
+%\deleted{In this decade,  phase-field approach for hydraulic fracture in porous media based on Biot's equations and theory of porous media has been investigated by Bourdin  \emph{et al.}~\cite{bourdin2012variational}, Yoshioka and Bourdin \cite{yoshioka2016variational}, Wheeler \emph{et al.}~\cite{Wheeler201469}, Wick \emph{et al.}~\cite{wick2016fluid}, Lee \emph{et al.}~\cite{lee2016phase}, Mauthe and Miehe \cite{mauthe2017hydraulic},  Heider and Markert \cite{heider2017phase}, and Ehlers and Luo \cite{ehlers2017phase}. In most cases they suppose the fracturing fluid is incompressible or slightly compressible. Recently, Heider and Markert \cite{heider2017modelling} proposed a method to model the pore fluid is considered compressible.}
+
+%{\color{blue}
+Bourdin \emph{et al.}~\cite{bourdin2012variational} have adopted the phase field approach to model hydraulic fracturing in impermeable media by considering the force that fluid pressure exerts on fracture surfaces. Afterwards, phase field
+approaches for hydraulic fracture in porous media based on Biot's equations and the theory of porous media have been investigated by many researchers. %\cite{bourdin2012variational,  yoshioka2016variational, mikelic2014phase, Wheeler201469,wick2016fluid,lee2016phase,mauthe2017hydraulic,heider2017phase,ehlers2017phase}
+%\todo{YS: There is no need to cite the same works if they are to be commented on later.\\ Mostafa: I have removed the refrences here.}
+
+%\todo[inline]{YS: Nice try. A better way to organize this paragraph is to think about the most important distinction among them, for example, compressible vs.~incompressible. Then we first talk about one family then the other.}
+Mikeli\'{c} \emph{et al.}~\cite{mikelic2014phase} model pressurized fracture in porous media by  combining the Biot theory and phase field approach. 
+To minimize code modifications for adopting the phase field approach with an existing reservoir simulator, Yoshioka and Bourdin \cite{yoshioka2016variational}  have proposed an efficient framework by modifying the Darcy law.
+Wick \emph{et al.}~\cite{wick2016fluid} have developed a model to simulate fluid-filled fracture propagation coupled to a reservoir simulator. Also, they have  used a single pressure equation for the entire fractured domain by introducing a function to distinguish between reservoir and fracture domains. Mauthe  and 
+Miehe \cite{mauthe2017hydraulic} have coupled the phase field hydraulic fracture and porous media fluid flow by using a permeability decomposition. 
+Ehlers and Luo \cite{ehlers2017phase} have combined the theory of porous media (TPM)  and the phase field approach to fracture.  Also, Culp \emph{et al.}~\cite{culp2017phase} have applied the phase field approach to fracture in CO$_2$ sequestration. %, even though they have not mentioned the CO$_2$ flow specifics. 
+In most cases researchers have supposed the fracturing fluid is incompressible or slightly compressible.
+Recently, Heider and Markert \cite{heider2017modelling} proposed a method to model the pore fluid which is considered compressible. %}
+
+The objective of the paper at hand is to propose a phase field model to investigate the effect of CO$_2$ as a compressible fracturing fluid under the isothermal condition, as the first step towards such modeling. For this purpose, we have adopted the phase field approach to model fracturing in porous media according to Mikeli\'{c} \emph{et al.}~\cite{mikelic2014phase}. We model the CO$_2$ flow as a compressible fluid by modifying Darcy's law. We suppose permeability is correlated to the phase field value by an exponential function. The CO$_2$ density varies significantly with pressure, which is captured by the Span-Wagner equation of state \cite{span1996new}.
+
+%\todo[inline]{YS: More features of our paper should come here.\\ Mostafa: Added}
+
+%\paragraph{Structure of paper.} 
+In the remaining paper we will proceed as follows:  a description of the fracture problem is given in  Section \ref{sec:Math_model}, including the governing equations of the solid and the fluid flow. Afterwards, the numerical discretization and algorithm are constructed in Section \ref{sec:Num_Sol}. Then Section \ref{sec:num-examples} provides numerical examples and discussions, where we will show that our results for the breakdown pressure agree well with not only widely used analytical solutions but also, within a reasonable error, with experimental results. Finally Section \ref{sec:concl} draws conclusions. %, followed by a conclusion in Section \ref{sec:concl}.

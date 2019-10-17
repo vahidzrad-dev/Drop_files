@@ -1,0 +1,436 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+%\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+\documentclass{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+%% \usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+
+%% The amsthm package provides extended theorem environments
+% packages added by Vahid
+\usepackage{changes}
+%\usepackage{tablefootnote}
+
+\usepackage{hyperref}
+
+\usepackage{amsthm}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{stmaryrd}
+\usepackage[boxed]{algorithm2e}
+\usepackage{subfig}
+\usepackage{xcolor}
+%\usepackage{showlabels}
+%\newcommand{\todo}[1]{{\color{red} #1}}
+\usepackage{todonotes}
+\newcommand{\Comment}[1]{{\color{green}\vspace{5 mm}\par \noindent
+  \marginpar{\textsc{Comment}} \framebox{\begin{minipage}[c]{0.95
+        \textwidth} \tt #1 \end{minipage}}\vspace{5 mm}\par}}
+\newcommand{\review}[1]{ \textit{#1}}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+%% \usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+
+\journal{Journal of Natural Gas Science and Engineering}
+\graphicspath{
+  {./figures/}}
+
+\DeclareMathOperator{\divergence}{div}
+
+\DeclareMathOperator{\sign}{sign}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Response to reviewer comments on `Numerical modeling of CO$_2$ fracturing by the phase field approach'}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author[mymainaddress]{Mostafa Mollaali}
+%\ead[url]{www.elsevier.com}
+
+\author[mysecondaryaddress]{Vahid Ziaei-Rad}
+%\ead[url]{www.elsevier.com}
+
+\author[mymainaddress]{Yongxing Shen\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{yongxing.shen@sjtu.edu.cn}
+
+\address[mymainaddress]{University of Michigan -- Shanghai Jiao Tong University Joint Institute, Shanghai Jiao Tong University,	Shanghai, China}
+\address[mysecondaryaddress]{Faculty of Civil, Water and Environmental Engineering, Shahid Beheshti University, Tehran, Iran}
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+% \linenumbers
+
+%% main text
+We thank the reviewers for their constructive comments to render the manuscript with higher quality. Below we first respond to each of the comments with the original comments italicized, then summarize the major changes of the manuscript. However, since this is an extensive revision, we will not provide a detailed list of changes since that would mean an extensive repetition of the text. Here we only bring to the editor's and reviewers' attention that we have merged the former Appendix A into the first three subsections of Section 4 to make the latter following an order from simple examples to complicated ones. Also note that \added{all other changes in the manuscript} are marked in blue.
+
+%----------------------------------------------------------------------------------------------------
+
+\section*{Comments from Reviewer \#1}
+
+\review{In overall, the manuscript is well written. I would recommend this manuscript for further consideration if the authors make the following revisions:}
+
+    \review{The nomenclature should be consistent with SPE nomenclature, for example $v$ should be used for velocity instead of $q$, $l$ should be used for length instead of $\sigma$.}
+
+{We appreciate the reviewer's positive comment. Following the SPE nomenclature, now we have substituted $\mathbf{v}$ for $\mathbf{q}$. Following the convention of the phase field for fracture community, we reserve $\ell$ for the regularization length scale. Note that $\sigma$ is nowhere used for length but for the \textit{in situ} stress.}
+
+\bigskip
+
+    \review{When CO$_2$ flow in the fracture and in rock, there are more than one phase because formation fluids also flow, hence the formulation should be for at least two phase.}
+
+%\todo{YS: I am a little confused. The supercritical state here is like gas for the purpose of surface tension. Then there is no such thing as fluid lag at all, but this has nothing to do with the injection being slow.}
+
+{It is true that including more phases would lead to a more realistic model. Moreover, our formulation for CO$_2$ as a compressible fluid is applicable to more than one phase with minimal changes. This being said, however, there are cases in which one phase is sufficient, and which is the scope of the proposed method in its current form, because the more complex the model, the more difficult to verify and validate. So at this stage, we confine ourselves to the simpler case of one phase to carefully verify the model, and generalization to more phases can be a future step.
+	More precisely, it will be assumed that CO$_2$ is in its supercritical state, and as the shale is a deep reservoir, the size of the fluid lag is negligible. In the revision we added the limitation of the proposed method at the end of Section 2.
+	%Hence, it is sufficient to consider only one phase flow in the fracture.
+}
+
+\bigskip
+
+    \review{Please use a consistent color set for all figures, scale in some figures changes white to black while others change from blue to white.}
+
+%\todo{YS: Actually I see no reason why for a schematic view we need a different color scheme. How about changing the color scheme also to from blue to red in Figure 1 and all other schematic figures?\\Vahid: I think we just remove the color set in Figure 3, since it is not really needed.}
+
+{We have edited Figure 1. The color bars are now from blue to red everywhere. It is also worth mentioning that in the current Section 4.1 the initial cracks are explicitly imposed, so that in the deformed configuration in Figure 4 they appear as lines in the color of the background (in the normal case white). See the caption of Figure 4.}
+
+\bigskip
+
+    \review{Please include a short paragraph to show how $d$ and $\alpha_k$ (Eq.~9) are determined?}
+
+%\Comment{YS: Don't refer! Such questions must be answered directly and succinctly.}
+%\todo{YS: ``We also added Figure \dots to visualize a schematic crack topology by the phase field approach.'' Why is this needed? This is not asked.}
+
+{The phase field $d$ is the key parameter in the phase field approach. It is obtained by minimizing (3), holding other fields fixed, which leads to the weak form, now numbered (A.1b). The solution procedure is given in Section 3, in which it is elaborated how the phase field $d$ is solved while coupled to $\bm{u}$ and $p$. The current Appendix A.1 gives the discretized form for the residual vectors and tangent stiffness matrices for solving $d$ as well as $\bm{u}$.
+
+The parameter $\alpha_k$ is a parameter to input. We have expanded the paragraph surrounding Equation (9) to explain this point.
+
+%Its physical meaning is as follows. When the crack starts propagating, the permeability of the solid matrix starts to increase, as the crack width increases. To incorporate this effect into our model, an exponential variation of the fluid permeability has been adopted from \cite{PILLAI201836,zhou2014fluid} so that it starts from an initial value for a completely intact porous medium to a very big value of permeability in the fully broken area. Hence, $\alpha_k$ is just a coefficient to indicate the effect of phase field evolution on the permeability. In real applications, it can be obtained from experiments. We also added more descriptions for $k(d)$ in the manuscript, p.~7, l.~150--155.}
+
+\bigskip
+
+    \review{Please use more close to reservoir condition for input data. The tensile strength in Tab.~1 is very high for the rock with that Young's modulus. The initial pressure is rather too low.}
+
+%\todo{YS: Fix the cited reference and the table reference.}
+
+{Since we aimed to verify our results with Wang \emph{et al.}~\cite{wang2018influence}, the selected input data are in accordance with this reference. Also, all mechanical input data are approximately within the range proposed for the shale in a few references. See, e.g., Table \ref{Tab:input_data} for a comparison between our input data with the suggested mechanical properties for the shale by Eseme \emph{et al.}~\cite{eseme2007review}, in which the authors % presented a %concise, up-to-date 
+	reviewed literature on the mechanical properties of oil shales. Also, the initial pressure is in accordance with \cite{wang2018influence}. %It is clear though that our methodology can be used with any set of input data.
+}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Mechanical properties of rich shale from the Western US.}
+	
+	\begin{tabular}{l c c c c}
+		\hline 
+		Property & Symbol & Unit & Values from \cite{eseme2007review} & Our values\\
+		\hline
+		Young's modulus & $E$ & GPa & $4.5\pm0.5$ & 6\\
+		Poisson's ratio & $\nu$ & $-$ & 0.35 & 0.34\\
+		Tensile strength & $\sigma_t$ & MPa & $9.5\pm1.5$ & 11\\
+		\hline
+	\end{tabular}
+	\label{Tab:input_data}
+\end{table}
+
+%\todo{YS: As the following are TWO questions, we need to address them separately.}
+
+    \review{Please include all necessary inputs for the simulation to allow other people to duplicate the job if needed.
+    There is no data related to in-situ stresses. Although, they are not in the equation but they are the boundary condition.}
+
+{We found we missed in one place the values of \textit{in situ} stresses, which we have added on p.~22, l.~341. We believe now all other input data and the algorithm are sufficient for reproducing the results.}
+
+\bigskip
+
+    \review{More numerical simulation or case studies may be needed and a comparison with other models may be useful to show the innovation of this model.}
+%\todo[inline]{YS: Here the innovation needs to be shown by comparison.\\Vahid: See my suggested paragraph below (in blue).\\
+%YS: But are these in the manuscript? If it is appropriate to have these in the manuscript, then we add them if we haven't, then just refer to the manuscript.}
+%{Now we added two more numerical examples to the manuscript; (1) increasing pressure leading to joining fractures, as Section 4.4, and (2) interaction between CO$_2$-driven fracture and inclined natural fractures, as Section 4.6. At the end of Section 2, p.~9, l.~171--181, we also included a paragraph to discuss the innovation of the current model.}
+
+{What makes the phase field an attractive approach can be attributed to its convenience in simulating complex fracture processes, including crack initiation, propagation, branching and merging. Compared to discrete crack descriptions, the phase field approaches avoid tracking the complicated crack geometry; instead, the crack evolution is a natural outcome of the numerical solution to a constrained optimization problem. Thus, it significantly decreases the implementation difficulty, especially when dealing with 3D problems. To illustrate this major advantage, in this version, we added two more application examples to the manuscript; (1) increasing pressure leading to joining cracks, as Section 4.4, and (2) interaction between CO$_2$-driven fractures and inclined natural fractures, as Section 4.6. Both examples result in complicated crack topologies. At the end of Section 2, we also added a paragraph to discuss the innovation of the current model.}
+
+\bigskip
+    \review{We need more section to discuss the advantage of the model compared to other approaches.}
+
+{We added one paragraph to the end of Section 2 to discuss the advantages as well as limitations of the current approach. %Here in brief: one major advantage of the current approach is its convenience in simulating complex fracture processes, including fracture initiation, propagation and merging.
+}
+
+
+%-------------------------------------------------------------------------------------
+\section*{Comments from Reviewer \#2}
+    \review{This paper presents a very novel approach to model the CO$_2$ fracturing process. I think this topic is very new and definitely worth digging into. The authors have presented enough details about the fundamentals of the solution, and overall I think this paper is very well laid out. I have following minor suggestions for further improvement:}
+
+    \review{1. One main concern is that this paper seems too mathematical. }
+
+%    \todo{YS: Condense the names of examples into the sentence beginning with ``Now we added''. For this reviewer we don't need to elaborate the examples.}
+% 
+{We appreciate the reviewer's positive comments. Since the objective of this paper is to propose a \emph{numerical} model for CO$_2$ fracturing, we had to provide necessary formulas in a way that readers can reproduce our results. }
+
+\bigskip
+
+\review{The layout of the manuscript could benefit from more description about the application of the methodology.}
+
+We added two more application examples to the manuscript; (1) increasing pressure leading to joining cracks, as Section 4.4, and (2) interaction between CO$_2$-driven fractures and inclined natural fractures, as Section 4.6.
+
+\bigskip
+
+    \review{2. The validation is not very clear to me. The author presented three verifications, but are they trying to prove the validity of the proposed method? Honestly I didn't recognize the method that was used for validation. Is it a well-established analytic solution, or results from well-established simulation? I would strongly recommend re-write the validation part.}
+
+	%\todo{YS: Complete and fix the references.}
+%\todo[inline]{YS: Bad beginning. Please reply to the point.\\Vahid: How about now? Deleting the first few sentences, and moving them to the end as a note.\\YS: The most direct way to answer questions like ``are they...'' is yes or no.}
+{%\deleted{Wilson \emph{et al.}~\cite{wilson2016phase} and Chukwudozie~\cite{chukwudozie2016application} have already proved that the phase field approach to hydraulic fracturing well agrees with classical two-dimensional analytical solutions \cite{detournay2003near,hu2010plane}. In this work, we extended the phase field model for hydraulic fracture to also capture compressible flow.} 
+	Yes, we were trying to prove the validity of the proposed method in the former Appendix A, which is now Sections 4.1 -- 4.3.
+	%We tested our implementation through a number of verification examples. In the current version, we merged the three verification examples and the numerical tests into one section. Hence, we have a set of numerical examples, all solved with the same methodology. In this order, 
+	In these three sets of examples, we compare our method against exact or otherwise well-established solutions for verification. %In all verification examples, a coupled problem of unknowns have been solved. 
+	See Table \ref{Tab:coupled_problem} for a summary of the requested information by the reviewer. In addition, we made some minor edits to these sections to clarify these issues.
+\begin{table}[htbp]
+	\centering
+	\caption{Summary of the verification examples.}
+		\begin{tabular}{c c c}
+			\hline 
+			Section in the revised manuscript & Reference solution & Type \\
+       		\hline
+			4.1 & Miehe \emph{et al.}~\cite{miehe2010phase} & Numerical \\
+			4.2 & Detourney and Cheng \cite{detournay1988poroelastic} & Analytical \\
+			4.3 & Sneddon and Lowengrub \cite{SneddonLowengrub69} & Analytical \\
+			\hline
+       	\end{tabular}
+	\label{Tab:coupled_problem}
+\end{table}
+
+%First, we provided a single-edge-notched tension test as a coupled problem of $\bm{u}$ and $d$. Second, we followed an example by Detourney and Cheng \cite{detournay1988poroelastic} to study the effect of fluid pressurization on the poroelastic response around the borehole as a coupled problem of $\bm{u}$ and $p$. \added{The third example is also a classical problem by Sneddon and Lowengrouo \cite{SneddonLowengrub69} where a monotonically increasing pressure is applied and a coupled problem is solved.} For each example, we output our results with those of analytical/trusted solutions, and we observed a good agreement. \deleted{Also, we added one more validation {namely} Mandel's example to the manuscript \dots}}
+%In the first two examples (4.1 and 4.2), two out of three unknowns are coupled. In the third one (4.3), all three variables are taken into account, but $p$ is monotonically increasing, also, the same is applied to the new example of `increasing pressure leading to joining cracks' (4.4). In the other two examples (1) `CO$_2$-driven fracture' (4.5), and (2) `interaction between CO$_2$-driven fracture and inclined natural fractures' (4.6), all three unknowns are solved in a fully coupled way.}
+
+%\added{It is also worth mentioning that Wilson \emph{et al.}~\cite{wilson2016phase} and Chukwudozie~\cite{chukwudozie2016application} have already proved that the phase field approach to hydraulic fracturing well agrees with classical two-dimensional analytical solutions \cite{detournay2003near,hu2010plane}. In this work, we extended the phase field model for hydraulic fracture to also capture compressible flow.}
+
+\bigskip
+
+    \review{3. What is the limitation of the current method? }
+
+%\todo{YS: Why cite a review here? There are so many water-based works that we cited.}
+
+%\paragraph{Limitation of current approach} 
+%As this works is the first of its kind, a relatively simple model is used for the calculation of gas flow and permeability in shale media. However, it has the potential to incorporate more sophisticated phenomena to the model in the future.
+The limitation is the rather simple model for the gas flow and permeability in shale media. We added a summary of the limitations as well as the advantages at the end of Section 2.
+
+\bigskip
+
+\review{It is not very clear to me that whether this method is application to traditional water based fracking or not. }
+%\todo[inline]{YS: ``if so'' means we need to continue with the flow of idea. The question is the advantage compared with these cited references.}
+%\paragraph{Application in water based fracking} 
+
+The phase field approach has already been applied to water based fracking by multiple authors, see e.g., \cite{bourdin2012variational, mikelic2014phase, yoshioka2016variational, wick2016fluid, mauthe2017hydraulic, ehlers2017phase, culp2017phase, heider2017modelling}. 
+%\paragraph{Advantage of current approach} 
+
+\bigskip
+\review{And if so, what is the advantage of the current approach?}
+
+The advantage of the current approach is the generalization to \emph{CO$_2$ fracturing}. 
+%One major advantage of the current approach is its convenience in simulating complex fracture processes, including fracture initiation, propagation and merging. 
+In the paper at hand, we propose a phase field model to consider CO$_2$ as a compressible fracturing fluid under the isothermal condition, as the first step towards such modeling. More precisely, the CO$_2$ density varies significantly with pressure, which is captured by the Span-Wagner equation of state \cite{span1996new}. The computed values show good agreement with analytical solutions and experimental results.
+
+%-------------------------------------------------------------------------------------
+\section*{Comments from Reviewer \#3}
+
+    \review{The paper tries to use phase field method to model CO$_2$ fracturing. Some assumptions used in governing equations are not supported with the theory of poroelasticity. Hydraulic fracturing or CO$_2$ fracturing involves strongly coupled processes. But the authors verify their model through non-coupled examples.}
+
+\review{ The coupled behaviors about pressure and aperture evolutions are not demonstrated. This makes the correctness of the model in doubt. I recommend resubmission of the paper after the model is correctly verified through asymptotic analytical solutions for hydraulic fracturing. Without correctly verifying the coupled model, I cannot recommend the acceptance of it. }
+
+%\todo[inline]{YS: Bad beginning.}
+Regarding verification with asymptotic analytical solutions for hydraulic fracturing:
+The phase field approach has already been applied to hydraulic fracturing by multiple authors since 2012, see e.g., \cite{bourdin2012variational, mikelic2014phase, yoshioka2016variational, wick2016fluid, mauthe2017hydraulic, ehlers2017phase, culp2017phase, heider2017modelling}. Among these references,
+%The classical two-dimensional hydraulic fracturing model, namely KGD model \cite{khristianovic1955}, solves a plane strain problem of fluid-driven fracture evolution under a few scaling regimes as storage dominated, leak-off dominated, viscosity dominated and toughness dominated \cite{detournay2003near,hu2010plane}.
+Wilson and Landis \cite{wilson2016phase} and Chukwudozie \cite{chukwudozie2016application} have already verified the phase field hydraulic fracture models with asymptotic solutions by Detournay and Garagash \cite{detournay2003near} and Hu
+and Garagash \cite{hu2010plane}. They verified the phase field model for both toughness-dominated and viscosity-dominated regimes, and found good agreement for pressure, aperture, and fracture length. At the beginning of Section 4, we now remind the readers of such existing verification results.
+As the phase field part of our method is based on the literature, and the main innovation is to model CO$_2$ fracturing by treating CO$_2$ as a compressible fluid, we did not plan to repeat such verifications for hydraulic fracturing.
+
+%In this work, we extended the existing phase field models to capture also the compressible fluid flow with the significant variations in gas density by pressure. Our implementation is validated by means of a set of verification examples. In the current version, we merged the three verification examples and the numerical tests into one section. Hence, we have a set of numerical examples, all solved with the same methodology. In this order, the first three set of examples are compared with exact or otherwise trusted solutions for verification. In all verification examples, a coupled problem of unknowns have been solved. See Table \ref{Tab:coupled_problem_rev3} for a summary of verification examples.
+%\begin{table}[htbp]
+%	\centering
+%	\caption{Summary of coupled verification examples.}
+%	\begin{tabular}{l c c }
+%		\hline 
+%		Numerical example & Reference &  Coupled fields \\
+%		\hline
+%		
+%		Section 4.1 & Miehe \cite{miehe2010phase} &  $\bm{u}$, $d$  \\
+%		Section 4.2 & Detourney and Cheng \cite{detournay1988poroelastic} & $\bm{u}$, $p$ \\
+%		Section 4.3 & Sneddon and Lowengrub\cite{SneddonLowengrub69} & $\bm{u}$, $p$%\tablefootnote{A monotonically increasing pressure is applied.}
+%		, $d$ \\
+%		\hline
+%	\end{tabular}
+%	\label{Tab:coupled_problem_rev3}
+%\end{table}
+
+%The fracture propagation is governed by two competing energy dissipation mechanisms: (I) and two fluid storage mechanisms. The energy dissipation mechanisms are associated with viscous fluid flow and and rock deformation to create fractures, while the fluid storage mechanisms involve fluid storage in the fracture and fluid leak-off into the permeable reservoir. Based on the relative magnitude of the dissipation processes and storage processes, a parametric space of the different propagation regimes was created. For the classical hydraulic fracturing modeling by phase field approach, these conditions are verified by researchers \cite{wilson2016phase, chukwudozie2016application}  }
+
+%\todo{YS: First say the verification examples are all coupled. Then carefully dig the literature of phase field for hydraulic fracturing to see who has verified the method with asymptotic analytical solutions (early time, late time, see my IJNAMG paper).}
+\bigskip
+
+    \review{The followings are a few comments:}
+    	
+    	\review{1. The authors used a phase field depended permeability in their study. The permeability should be determined by the opening or close of fractures. Why could a damage variable be used to determine permeability? The phase field value is distributed over a range, however, a fracture creates jump in pressure and displacement. Why could a continuous variable be use to represent discontinuous behaviors, especially for permeability?}
+
+{In smeared crack approaches such as the phase field method, the discontinuity is distributed over a finite width so that the sharp description of the crack is replaced by a diffusive description. This is precisely the key point of the variational theory of fracture, more commonly called the phase field approach, and its correctness was shown with the language of $\Gamma$-convergence, see, for example, Chambolle \cite{CHAMBOLLE2004929}.}
+	
+{In this work, we have used the same idea for the permeability as well. See similar works \cite{PILLAI201836, ZHU2013179} with a damage model. In this regard, we have expanded the paragraph on p.~7 surrounding Equation (9) for more explanation. %It is clear that when the crack starts propagating, the permeability of the solid matrix starts to increase, as the crack width increases. To incorporate this effect into our model, an exponential variation of the fluid permeability has been introduced so that it starts from an initial value for a completely intact porous medium to a very big value for the permeability inside the crack where $d=1$. In p.~7, l.~150--155, we also added more descriptions on how we modeled the permeability.
+}
+
+\bigskip
+
+    \review{2. Eq.~10 is not correct; which casts doubt on the whole sequentially coupled process. The treatment of porosity in Eq.~10 conflicts with the theory of poroelasticity. Change of porosity is not equal to the change of volumetric strain, not even in an approximate manner.}
+
+{In \cite{verruijt2013theory}, Verruijt proved that $\partial_t\varepsilon_v=(1-\phi)\partial_t\phi$, assuming the grains are incompressible. On the other hand, Terzaghi \cite{terzaghi1943} and Sheng \emph{et al.}~\cite{sheng2012extended} suggested $\partial_t\varepsilon_v=\partial_t\phi$. In any case, as the porosity is relatively small ($\phi=0.01$) we can still approximate the change of pore volume to that of the volumetric strain with minimal error. It is also worth mentioning that according to Wang \emph{et al.}~\cite{wang2018influence}, the effect of the whole term $\rho\partial_t\phi$ is small compared with other terms.}
+
+%\todo{YS: Don't modify the formulation just because of this. Are we sure about the equality of the change of porosity and the change of volumetric strain?}
+\bigskip
+
+    \review{3. Could the authors give the spatial and temporal discretization in appendix? Since the weak form is given already, spatial discretization is only one step away. I doubt the spatial discretization for a poroelastic medium could be derived from Eq.~B1b or Eq.~B2b. Though it is possible that the poroelastic model is ready for use in FEniCS package, the authors are suggested to provide the completely discretized formulations for the benefit of readers.}
+    
+{Following the reviewer's comment, now we have added the spatial and temporal discretizations to the current Appendix A. It is true that in our implementation, FEniCS itself computes this step.}
+
+\bigskip
+    \review{4. Fully coupled examples are needed to verify the model. Correctly verifying a tensile test and the pressurization of a fracture do not indicate the model can correctly simulate hydraulic fracturing or CO$_2$ fracturing. The verification about pressurizing a bore hole is not a good example to show poroelastic responses. Actually, no typical poroelastic responses are shown in the example. Mandel's problem is suggested.}
+
+%{Following the reviewers' comment, we added the Mandel's problem to the validation part. The example by Detourney and Cheng has also been widely used for validating the poroelastic response of a borehole.}
+
+%\todo[inline]{Pending\dots}
+
+%\todo[inline]{Vahid: What does it mean by typical poroelastic response? \\YS: Well, according to the reviewer, Mandel's problem serves.}
+
+We appreciate the reviewer's suggestion. However, Mandel's problem is based on the assumption that the fluid is incompressible, while our main contribution is to model CO$_2$ as a compressible flow. Moreover, both being models with incompressible fluids, Mandel's problem would somehow repeat the second verification example (now Section 4.2) where the porous flow is coupled with the porous medium's displacement. Based on these reasons, we would prefer not to carry out Mandel's problem for this manuscript.
+
+\bigskip
+    \review{5. Please briefly explain the AT1 and AT2 model.}
+
+{We now explained more about the AT1 and AT2 models on p.~5, under Equation (2). 
+	%Here is the main idea: Equation (2) permits two typical choices for $w(d)$, and the AT1 and AT2 models correspond to $w(d)=d$ and $w(d)=d^2$, respectively.
+%Between these models, the AT1 model which is better at simulating crack nucleation \cite{tanne2018crack} predicts a phase field profile with a support of a finite width, but requires solving \emph{inequality} constrained optimization problems; the AT2 model, which normally requires a preexisting crack (at least for a homogeneous material under low-speed loading), gives a diffuse phase field profile, but can be implemented as constrained optimization problems which are much easier to solve.
+}
+
+%\todo{YS: We should have the explanation and the citation together, I believe, either both in the manuscript or both here.}
+\bigskip
+    \review{6. line 1-2 Page 1 Are you sure shale or mudstone is the most common sedimentary rock?}
+
+{We removed this phrase from the text.}
+
+%-------------------------------------------------------------------------------------
+\section*{Comments from Reviewer \#4}
+
+    \review{The authors have proposed a model for CO$_2$ flow and fracturing in shale media. The manuscript has a good order, but needs revision to satisfy publication quality.}
+
+    \review{Gas flow in shale is one of the most challenging topics and has been widely investigated. The authors have used a relatively simple model for calculation of gas flow and permeability in shale media. A good model will capture important phenomena like Knudsen Diffusion and adsorption effect in shale rock media. Please modify this part of your model by providing a more holistic and detailed explanation. Please refer to series of papers by Javadpour et al. Also see: Seyyed A. Hosseini et al.~``Novel Analytical Core-Sample Analysis Indicates Higher Gas Content in Shale-Gas Reservoirs'' SPE Journal 2015.}
+
+%\todo{YS: We should carefully study these references and get an idea of what should be done to account for Knudsen diffusion and adsorption effect. That could really be our future work.}
+We appreciate the reviewer's positive comments. Regarding phenomena like Knudsen diffusion and adsorption effect, we must recognize that each model has its scale of applicability. The proposed model is applicable to the continuum scale, aiming at 
+%The recommended papers are cited. However, 
+%the objective of this paper is to propose a phase field approach to model CO$_2$ as the compressible fracturing fluid. One major advantage of the current approach is its convenience in 
+simulating complex fracture processes, including fracture initiation, propagation and merging. As this work represents the first of its kind, a relatively simple model is used for the calculation of gas flow and permeability in shale media. For example, we simply used Darcy's law in a viscous flow regime (common in conventional reservoirs), as our continuum approach cannot afford explicitly capturing microscale phenomena like Knudsen diffusion. %This has to do with the multi-scale methods which is out of the scope of this paper. 
+However there is potential to adopt more sophisticated phenomena like slip flow regime in future works in a multiscale simulation framework. Now we commented in Section 2.2 the works mentioned by the reviewer and admitted to our readers on p.~7, l.~145--150 of the simplicity of the model we used for the flow transport.
+
+
+
+%\Comment{Mostafa : We can add the following text to manuscript.\\
+%\added{For sake of simplicity, we use the Darcy's law to flow transport in this manuscript. Even though, the flow production data in the shale shows that the prediction of Darcy's law is lower than which they were measured. Thus, new flow transport mechanisms such as slip flow, transitional flow and Knudsen diffusion are appreaed. For more details we refer the reader to litreture (see  \cite{javadpour2007nanoscale,javadpour2009nanopores,hosseini2015novel,civan2010effective}). 
+%}}
+
+%\todo{Mostafa to Vahid: see this  website \\ http://www.allaboutshale.com/flow-mechanics-shale-gas-emanuel-omar-martin/\\
+%to more information about slip flow, transitional flow and Knudsen diffusion.}
+
+%\todo{Pending: review the cited references.}
+%-------------------------------------------------------------------------------------
+%\clearpage
+%\section*{References}
+\bibliographystyle{elsarticle-num}
+\bibliography{../Revision/ref}
+\end{document}

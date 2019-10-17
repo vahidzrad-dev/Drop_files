@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Mathematical model}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Porous medium deformation and fracture propagation}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Variational formulation of brittle fracture}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Regularized variational formulation of brittle fracture}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Carbon dioxide as a compressible fluid}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Numerical solution}{}% 7
+\BOOKMARK [1][-]{section.4}{Numerical examples}{}% 8
+\BOOKMARK [1][-]{section.5}{Conclusions}{}% 9
+\BOOKMARK [1][-]{appendix.A}{Verification of the method}{}% 10
+\BOOKMARK [2][-]{subsection.A.1}{Single-edge-notched tension test}{appendix.A}% 11
+\BOOKMARK [2][-]{subsection.A.2}{Poroelastic response of a borehole}{appendix.A}% 12
+\BOOKMARK [2][-]{subsection.A.3}{Computation of the crack opening displacement}{appendix.A}% 13
+\BOOKMARK [1][-]{appendix.B}{Weak forms }{}% 14
+\BOOKMARK [2][-]{subsection.B.1}{Porous medium}{appendix.B}% 15
+\BOOKMARK [2][-]{subsection.B.2}{Compressible \(CO2\) fluid flow discretization}{appendix.B}% 16

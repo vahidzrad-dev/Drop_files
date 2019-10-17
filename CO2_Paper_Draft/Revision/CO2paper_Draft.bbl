@@ -1,0 +1,311 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{hattori2017numerical}
+G.~Hattori, J.~Trevelyan, C.~E. Augarde, W.~M. Coombs, A.~C. Aplin, Numerical
+  simulation of fracking in shale rocks: Current state and future approaches,
+  Archives of Computational Methods in Engineering 24~(2) (2017) 281--317.
+
+\bibitem{middleton2014co2}
+R.~Middleton, H.~Viswanathan, R.~Currier, R.~Gupta, {CO$_2$} as a fracturing
+  fluid: Potential for commercial-scale shale gas production and {CO$_2$}
+  sequestration, Energy Procedia 63 (2014) 7780--7784.
+
+\bibitem{WANG2016160}
+L.~Wang, B.~Yao, M.~Cha, N.~B. Alqahtani, T.~W. Patterson, T.~J. Kneafsey,
+  J.~L. Miskimins, X.~Yin, Y.-S. Wu, Waterless fracturing technologies for
+  unconventional reservoirs--opportunities for liquid nitrogen, Journal of
+  Natural Gas Science and Engineering 35 (2016) 160--174.
+
+\bibitem{miller1976fracturing}
+J.~Miller, R.~T. Johansen, Fracturing oil shale with explosives for in situ
+  recovery, Shale Oil, Tar Sands, and Related Fuel Sources (1976) 98--111.
+
+\bibitem{lillies1982sand}
+A.~T. Lillies, S.~R. King, Sand fracturing with liquid carbon dioxide, in: SPE
+  Production Technology Symposium, Society of Petroleum Engineers, 1982, pp.
+  SPE--11341--MS.
+
+\bibitem{suehiro1996critical}
+Y.~Suehiro, M.~Nakajima, K.~Yamada, M.~Uematsu, Critical parameters of
+  $\{x$CO$_2$+$(1- x)$ CHF$_3\}$ for $x$=(1.0000, 0.7496, 0.5013, and 0.2522),
+  The Journal of Chemical Thermodynamics 28~(10) (1996) 1153--1164.
+
+\bibitem{brown2000hot}
+D.~W. Brown, A hot dry rock geothermal energy concept utilizing supercritical
+  {CO$_2$} instead of water, in: Proceedings of the twenty-fifth workshop on
+  geothermal reservoir engineering, Stanford University, 2000, pp. 233--238.
+
+\bibitem{middleton2015shale}
+R.~S. Middleton, J.~W. Carey, R.~P. Currier, J.~D. Hyman, Q.~Kang, S.~Karra,
+  J.~Jim{\'e}nez-Mart{\'\i}nez, M.~L. Porter, H.~S. Viswanathan, Shale gas and
+  non-aqueous fracturing fluids: Opportunities and challenges for supercritical
+  {CO$_2$}, Applied Energy 147 (2015) 500--509.
+
+\bibitem{ishida2012acoustic}
+T.~Ishida, K.~Aoyagi, T.~Niwa, Y.~Chen, S.~Murata, Q.~Chen, Y.~Nakayama,
+  Acoustic emission monitoring of hydraulic fracturing laboratory experiment
+  with supercritical and liquid {CO$_2$}, Geophysical Research Letters 39~(16)
+  (2012) L16309.
+
+\bibitem{ishida2016features}
+T.~Ishida, Y.~Chen, Z.~Bennour, H.~Yamashita, S.~Inui, Y.~Nagaya, M.~Naoi,
+  Q.~Chen, Y.~Nakayama, Y.~Nagano, Features of {CO$_2$} fracturing deduced from
+  acoustic emission and microscopy in laboratory experiments, Journal of
+  Geophysical Research: Solid Earth 121~(11) (2016) 8080--8098.
+
+\bibitem{wang2018influence}
+J.~Wang, D.~Elsworth, Y.~Wu, J.~Liu, W.~Zhu, Y.~Liu, The influence of
+  fracturing fluids on fracturing processes: A comparison between water, oil
+  and {SC-CO$_2$}, Rock Mechanics and Rock Engineering 51~(1) (2018) 299--313.
+
+\bibitem{zhou2014fluid}
+X.~Zhou, T.~J. Burbey, Fluid effect on hydraulic fracture propagation behavior:
+  A comparison between water and supercritical {CO$_2$}-like fluid, Geofluids
+  14~(2) (2014) 174--188.
+
+\bibitem{ngo1967finite}
+D.~Ngo, A.~C. Scordelis, Finite element analysis of reinforced concrete beams,
+  International Concrete Abstracts Portal 64~(3) (1967) 152--163.
+
+\bibitem{moes1999finite}
+N.~Mo{\"e}s, J.~Dolbow, T.~Belytschko, A finite element method for crack growth
+  without remeshing, International Journal for Numerical Methods in Engineering
+  46~(1) (1999) 131--150.
+
+\bibitem{RaChHuShLe14}
+R.~Rangarajan, M.~M. Chiaramonte, M.~J. Hunsweck, Y.~Shen, A.~J. Lew,
+  Simulating curvilinear crack propagation in two dimensions with universal
+  meshes, International Journal for Numerical Methods in Engineering 102~(3-4)
+  (2015) 632--670.
+
+\bibitem{verhoosel2011isogeometric}
+C.~V. Verhoosel, M.~A. Scott, T.~J. Hughes, R.~De~Borst, An isogeometric
+  analysis approach to gradient damage models, International Journal for
+  Numerical Methods in Engineering 86~(1) (2011) 115--134.
+
+\bibitem{Bourdin2000797}
+B.~Bourdin, G.~A. Francfort, J.-J. Marigo, Numerical experiments in revisited
+  brittle fracture, Journal of the Mechanics and Physics of Solids 48~(4)
+  (2000) 797--826.
+
+\bibitem{Peerlings19963391}
+R.~H.~J. Peerlings, R.~de~Borst, W.~A.~M. Brekelmans, J.~H.~P. de~Vree,
+  Gradient enhanced damage for quasi-brittle materials, International Journal
+  for Numerical Methods in Engineering 39~(19) (1996) 3391--3403.
+
+\bibitem{Francfort19981319}
+G.~A. Francfort, J.-J. Marigo, Revisiting brittle fracture as an energy
+  minimization problem, Journal of the Mechanics and Physics of Solids 46~(8)
+  (1998) 1319--1342.
+
+\bibitem{bourdin2012variational}
+B.~Bourdin, C.~P. Chukwudozie, K.~Yoshioka, A variational approach to the
+  numerical simulation of hydraulic fracturing, in: SPE Annual Technical
+  Conference and Exhibition, Society of Petroleum Engineers, 2012, pp.
+  SPE--159154--MS.
+
+\bibitem{mikelic2014phase}
+A.~Mikeli\'{c}, M.~F. Wheeler, T.~Wick, Phase-field modeling of pressurized
+  fractures in a poroelastic medium, ICES Report (2014) 14--18.
+
+\bibitem{yoshioka2016variational}
+K.~Yoshioka, B.~Bourdin, A variational hydraulic fracturing model coupled to a
+  reservoir simulator, International Journal of Rock Mechanics and Mining
+  Sciences 88 (2016) 137--150.
+
+\bibitem{wick2016fluid}
+T.~Wick, G.~Singh, M.~F. Wheeler, Fluid-filled fracture propagation with a
+  phase-field approach and coupling to a reservoir simulator, SPE Journal
+  21~(03) (2016) 981--999.
+
+\bibitem{mauthe2017hydraulic}
+S.~Mauthe, C.~Miehe, Hydraulic fracture in poro-hydro-elastic media, Mechanics
+  Research Communications 80 (2017) 69--83.
+
+\bibitem{ehlers2017phase}
+W.~Ehlers, C.~Luo, A phase-field approach embedded in the theory of porous
+  media for the description of dynamic hydraulic fracturing, Computer Methods
+  in Applied Mechanics and Engineering 315 (2017) 348--368.
+
+\bibitem{culp2017phase}
+D.~Culp, M.~R. Tupek, P.~Newell, M.~H. Hubler, Phase-field modeling of fracture
+  in {CO$_2$} sequestration, in: 51st US Rock Mechanics/Geomechanics Symposium,
+  American Rock Mechanics Association, 2017, pp. ARMA--2017--0644.
+
+\bibitem{heider2017modelling}
+Y.~Heider, B.~Markert, Modelling of hydraulic fracturing and fluid flow change
+  in saturated porous domains, Proc.~Appl.~Math.~Mech. 17~(1) (2017) 95--98.
+
+\bibitem{span1996new}
+R.~Span, W.~Wagner, A new equation of state for carbon dioxide covering the
+  fluid region from the triple-point temperature to 1100 {K} at pressures up to
+  800 {MPa}, Journal of Physical and Chemical Reference Data 25~(6) (1996)
+  1509--1596.
+
+\bibitem{ambrosio1990approximation}
+L.~Ambrosio, V.~M. Tortorelli, On the Approximation of Free Discontinuity
+  Problems, Scuola Normale Superiore, 1990.
+
+\bibitem{ambrosio1992approximation}
+L.~Ambrosio, V.~M. Tortorelli, On the approximation of functionals depending on
+  jumps by quadratic, elliptic functionals, Bollettino dell'Unione Matematica
+  Italiana 6 (1992) 105--123.
+
+\bibitem{tanne2018crack}
+E.~Tann{\'e}, T.~Li, B.~Bourdin, J.-J. Marigo, C.~Maurini, Crack nucleation in
+  variational phase-field models of brittle fracture, Journal of the Mechanics
+  and Physics of Solids 110 (2018) 80--99.
+
+\bibitem{Bourdin2014014301}
+B.~Bourdin, J.-J. Marigo, C.~Maurini, P.~Sicsic, Morphogenesis and propagation
+  of complex cracks induced by thermal shocks, Physical Review Letters 112
+  (2014) 014301.
+
+\bibitem{BourdinCFRAC13}
+B.~Bourdin, C.~Chukwudozie, K.~Yoshioka, A variational approach to the
+  numerical simulation of hydraulic fracturing, in: M.~Jir\'asek, O.~Allix,
+  N.~Mo\"es, J.~Oliver (Eds.), Computational Modeling of Fracture and Failure
+  of Materials and Structures: Proceedings of CFRAC 2013, 2013, p. 180.
+
+\bibitem{Amor09}
+H.~Amor, J.-J. Marigo, C.~Maurini, Regularized formulation of the variational
+  brittle fracture with unilateral contact: Numerical experiments, Journal of
+  the Mechanics and Physics of Solids 57 (2009) 1209--1229.
+
+\bibitem{Miehe20102765}
+C.~Miehe, M.~Hofacker, F.~Welschinger, A phase field model for rate-independent
+  crack propagation: Robust algorithmic implementation based on operator
+  splits, Computer Methods in Applied Mechanics and Engineering 199~(45--48)
+  (2010) 2765--2778.
+
+\bibitem{javadpour2007nanoscale}
+F.~Javadpour, D.~Fisher, M.~Unsworth, Nanoscale gas flow in shale gas
+  sediments, Journal of Canadian Petroleum Technology 46~(10).
+
+\bibitem{javadpour2009nanopores}
+F.~Javadpour, Nanopores and apparent permeability of gas flow in mudrocks
+  (shales and siltstone), Journal of Canadian Petroleum Technology 48~(8)
+  (2009) 16--21.
+
+\bibitem{hosseini2015novel}
+S.~A. Hosseini, F.~Javadpour, G.~E. Michael, Novel analytical core-sample
+  analysis indicates higher gas content in shale-gas reservoirs, SPE Journal
+  20~(6) (2015) 1--397.
+
+\bibitem{civan2010effective}
+F.~Civan, Effective correlation of apparent gas permeability in tight porous
+  media, Transport in Porous Media 82~(2) (2010) 375--384.
+
+\bibitem{PILLAI201836}
+U.~Pillai, Y.~Heider, B.~Markert, A diffusive dynamic brittle fracture model
+  for heterogeneous solids and porous materials with implementation using a
+  user-element subroutine, Computational Materials Science 153 (2018) 36 -- 47.
+
+\bibitem{ZHU2013179}
+W.~Zhu, C.~Wei, S.~Li, J.~Wei, M.~Zhang, Numerical modeling on destress
+  blasting in coal seam for enhancing gas drainage, International Journal of
+  Rock Mechanics and Mining Sciences 59 (2013) 179 -- 190.
+
+\bibitem{bourdin2008variational}
+B.~Bourdin, G.~A. Francfort, J.~J. Marigo, {The variational approach to
+  fracture}, Journal of Elasticity 91 (2008) 5--148.
+
+\bibitem{Logg2012}
+A.~Logg, G.~N. Wells, J.~Hake, DOLFIN: A C++/Python Finite Element Library,
+  Springer Berlin Heidelberg, Berlin, Heidelberg, 2012.
+
+\bibitem{amestoy2000mumps}
+P.~R. Amestoy, I.~S. Duff, J.-Y. L’Excellent, J.~Koster, {MUMPS}: A general
+  purpose distributed memory sparse solver, in: International Workshop on
+  Applied Parallel Computing, Springer, 2000, pp. 121--130.
+
+\bibitem{munson2014toolkit}
+T.~Munson, J.~Sarich, S.~Wild, S.~Benson, L.~McInnes, Toolkit for advanced
+  optimization {(TAO)} users manual, Tech. rep., Technical Report No.
+  ANL/MCS-TM-322-Revision 3.5 (Argonne National Laboratory, 2014) (2014).
+
+\bibitem{petsc-user-ref}
+S.~Balay, S.~Abhyankar, M.~F. Adams, J.~Brown, P.~Brune, K.~Buschelman,
+  L.~Dalcin, V.~Eijkhout, W.~D. Gropp, D.~Kaushik, M.~G. Knepley, D.~A. May,
+  L.~C. McInnes, R.~T. Mills, T.~Munson, K.~Rupp, P.~Sanan, B.~F. Smith,
+  S.~Zampini, H.~Zhang, H.~Zhang, {PETS}c users manual, Tech. Rep. ANL-95/11 -
+  Revision 3.9, Argonne National Laboratory (2018).
+
+\bibitem{bilgen2018phase}
+C.~Bilgen, A.~Kopani{\v{c}}{\'a}kov{\'a}, R.~Krause, K.~Weinberg, A phase-field
+  approach to conchoidal fracture, Meccanica 53~(6) (2018) 1203--1219.
+
+\bibitem{wilson2016phase}
+Z.~A. Wilson, C.~M. Landis, Phase-field modeling of hydraulic fracture, Journal
+  of the Mechanics and Physics of Solids 96 (2016) 264--290.
+
+\bibitem{chukwudozie2016application}
+C.~Chukwudozie, Application of the variational fracture model to hydraulic
+  fracturing in poroelastic media, Ph.D. thesis, Louisiana State University
+  (2016).
+
+\bibitem{detournay2003near}
+E.~Detournay, D.~Garagash, The near-tip region of a fluid-driven fracture
+  propagating in a permeable elastic solid, Journal of Fluid Mechanics 494
+  (2003) 1--32.
+
+\bibitem{hu2010plane}
+J.~Hu, D.~Garagash, Plane-strain propagation of a fluid-driven crack in a
+  permeable rock with fracture toughness, Journal of Engineering Mechanics
+  136~(9) (2010) 1152--1166.
+
+\bibitem{miehe2010phase}
+C.~Miehe, M.~Hofacker, F.~Welschinger, A phase field model for rate-independent
+  crack propagation: Robust algorithmic implementation based on operator
+  splits, Computer Methods in Applied Mechanics and Engineering 199~(45-48)
+  (2010) 2765--2778.
+
+\bibitem{ambati2015review}
+M.~Ambati, T.~Gerasimov, L.~De~Lorenzis, A review on phase-field models of
+  brittle fracture and a new fast hybrid formulation, Computational Mechanics
+  55~(2) (2015) 383--405.
+
+\bibitem{miehe2010thermodynamically}
+C.~Miehe, F.~Welschinger, M.~Hofacker, Thermodynamically consistent phase-field
+  models of fracture: Variational principles and multi-field {FE}
+  implementations, International Journal for Numerical Methods in Engineering
+  83~(10) (2010) 1273--1311.
+
+\bibitem{detournay1988poroelastic}
+E.~Detournay, A.-D. Cheng, Poroelastic response of a borehole in a
+  non-hydrostatic stress field, in: International Journal of Rock Mechanics and
+  Mining Sciences \& Geomechanics Abstracts, Vol.~25, Elsevier, 1988, pp.
+  171--182.
+
+\bibitem{lu2013microcrack}
+Y.~L. Lu, D.~Elsworth, L.~G. Wang, Microcrack-based coupled damage and flow
+  modeling of fracturing evolution in permeable brittle rocks, Computers and
+  Geotechnics 49 (2013) 226--244.
+
+\bibitem{SneddonLowengrub69}
+I.~N. Sneddon, M.~Lowengrub, Crack Problems in the Classical Theory of
+  Elasticity, Wiley, New York, 1969.
+
+\bibitem{Wheeler201469}
+M.~F. Wheeler, T.~Wick, W.~Wollner, An augmented-{L}agrangian method for the
+  phase-field approach for pressurized fractures, Computer Methods in Applied
+  Mechanics and Engineering 271 (2014) 69--85.
+
+\bibitem{hubbert1972mechanics}
+M.~K. Hubbert, D.~G. Willis, Mechanics of Hydraulic Fracturing, AAPG Special
+  Volumes, 1972.
+
+\bibitem{haimson1967initiation}
+B.~Haimson, C.~Fairhurst, Initiation and extension of hydraulic fractures in
+  rocks, Society of Petroleum Engineers Journal 7~(03) (1967) 310--318.
+
+\bibitem{yew2014mechanics}
+C.~H. Yew, X.~Weng, Mechanics of Hydraulic Fracturing, Gulf Professional
+  Publishing, 2014.
+
+\end{thebibliography}
